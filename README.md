@@ -225,7 +225,7 @@ spark-submit spark-2.4.3-bin-hadoop2.7/examples/src/main/python/sql/streaming/st
  
 ```
  
- ![](1212.jpg)
+ ![](12122.jpg)
  
  
  
