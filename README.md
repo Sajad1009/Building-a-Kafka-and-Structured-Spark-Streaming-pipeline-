@@ -21,4 +21,4 @@ This guide shows you how to start writing Spark Streaming programs with DStreams
 
 Note: There are a few APIs that are either different or not available in Python. Throughout this guide, you will find the tag Python API highlighting these differences.
 
-![]kafka_spark_pipeline.png
+![](kafka_spark_pipeline.png)
