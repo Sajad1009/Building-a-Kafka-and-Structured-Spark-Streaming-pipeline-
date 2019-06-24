@@ -132,17 +132,7 @@ sak@sajad-m:~/kafka_2.11-2.2.0$ kafka-console-producer.sh --brokeist localhost:9
 and send message 
 -----------------------------
 
->Hello Its me
->we learning new things
->Hello its me
->we learning new things
->Hello Its me
->We learning new things
->Hello its me
->whats up who going
->helloe
->byeeeeee
-
+>Hello how is going 
 
 -------------------------------
 ```
