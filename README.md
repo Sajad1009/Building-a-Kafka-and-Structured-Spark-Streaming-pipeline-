@@ -140,6 +140,30 @@ We learning new things
  #### Now we should get spark ready in our system  I am not going to cover how to install spark in the system howover google cloud  clusters and many platforms come with pre-installed apache spark 
  
  
+ In my system I have spark 2.4.3, Kafka 2.2.0 , and scala 2.11 
+ 
+ I attached 2 files you need to add them to spark jars files in order to run kafka with spark 
+ 
+ spark-sql-kafka-0-10_2.11-2.4.3
+ kafka-clients-2.2.0
+ 
+ you need to add them to the following folder in spark (just copy and paste them)
+ 
+ /spark-2.4.3-bin-hadoop2.7/jars/ 
+ 
+ --You have to upload file kafka_wordcount.py to your local dic
+ 
+ now we already send messages through our producer lets see them through apache kafka using the commpand below 
+ 
+```
+spark-submit spark-2.4.3-bin-hadoop2.7/examples/src/main/python/sql/streaming/structured_kafka_wordcount.py localhost:9092 subscribe test-topic
+ 
+```
+ 
+ 
+ 
+ 
+ 
  
 
 
