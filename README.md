@@ -127,6 +127,23 @@ kafka-topics.sh --list --zookeeper localhost:2181
 first we have to start producer to start sending messages  with the command below 
 
 ```
+sak@sajad-m:~/kafka_2.11-2.2.0$ kafka-console-producer.sh --brokeist localhost:9092 --topic test-topic
+
+and send message 
+-----------------------------
+Hello it me 
+
+We learning new things 
+-------------------------------
+```
+
+ #### Now we should get spark ready in our system  I am not going to cover how to install spark in the system howover google cloud  clusters and many platforms come with pre-installed apache spark 
+ 
+ 
+ 
+
+
+
 
 
 
