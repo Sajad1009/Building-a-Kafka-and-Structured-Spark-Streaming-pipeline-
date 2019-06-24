@@ -60,7 +60,7 @@ syncLimit=2
 
 --------------------------
 ```
-###Starting Zookeeper
+### Starting Zookeeper
 
 ```
 sak@sajad-m:~/apache-zookeeper-3.5.5-bin$ zkServer.sh start
@@ -81,7 +81,7 @@ with command sak@sajad-m:~/apache-zookeeper-3.5.5-bin$ zkCli.sh
 
 ```
 
-##Apache Kafka
+## Apache Kafka
 
 apache Kafka is an open-source stream-processing software platform developed by LinkedIn and donated to the Apache Software Foundation, written in Scala and Java. The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds.
 
@@ -95,9 +95,38 @@ tar -zxf kafka_2.11-2.2.1.tgz
 cd kafka_2.11-2.2.1  
 
 ```
-###Starting the Kafka server
+### Starting the Kafka server
 
 
+Because Kafka depends on Zookeeper to maintain and distribute tasks, we need to start ZooKeeper before starting the Kafka broker.
+
+```
+zookeeper-server-start.sh config/zookeeper.properties
+
+kafka-server-start.sh config/server.properties
+
+```
+
+Now you can strat a new topic
+
+```
+
+kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test-topic  ## name you topic 
+
+```
+
+We can also list the topics currently in the Kafka server by using the kafka-topics.sh utility script
+
+```
+kafka-topics.sh --list --zookeeper localhost:2181
+
+```
+
+##Producing and consuming messages with Kafka
+
+first we have to start producer to start sending messages  with the command below 
+
+```
 
 
 
