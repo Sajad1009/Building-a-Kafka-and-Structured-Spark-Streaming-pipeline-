@@ -20,3 +20,5 @@ Spark Streaming provides a high-level abstraction called discretized stream or D
 This guide shows you how to start writing Spark Streaming programs with DStreams. You can write Spark Streaming programs in Scala, Java or Python (introduced in Spark 1.2), all of which are presented in this guide. You will find tabs throughout this guide that let you choose between code snippets of different languages.
 
 Note: There are a few APIs that are either different or not available in Python. Throughout this guide, you will find the tag Python API highlighting these differences.
+
+![]kafka_spark_pipeline.png
