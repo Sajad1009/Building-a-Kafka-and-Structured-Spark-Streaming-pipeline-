@@ -22,3 +22,92 @@ This guide shows you how to start writing Spark Streaming programs with DStreams
 Note: There are a few APIs that are either different or not available in Python. Throughout this guide, you will find the tag Python API highlighting these differences.
 
 ![](kafka_spark_pipeline.png)
+
+
+Lets strat with coding side:------
+
+
+### setting up your  java environnment in your system 
+
+I am not going to cover that here.... However I provided some link below to take you through the process 
+
+https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html
+
+### Zookeeper Installing Zookeeper
+
+```
+sak@sajad-m:~$ wget http://apache.stu.edu.tw/zookeeper/zookeeper-3.5.5/apache-zookeeper-3.5.5-bin.tar.gz
+
+sak@sajad-m:~$ tar -zxf apache-zookeeper-3.5.5-bin.tar.gz
+
+sak@sajad-m:~$ cd apache-zookeeper-3.5.5-bin
+
+## At this point, you can create a new directory data using the mkdir command
+
+sak@sajad-m:~/apache-zookeeper-3.5.5-bin$ mkdir data
+
+and also edit the Zookeeper configuration file located in the conf directory with the command
+
+vim conf/zoo.cfg  
+
+--------------------------
+
+tickTime=2000
+dataDir=/path_to_your_working_directory/zookeeper-3.5.5-bin/data
+clientPort=2181
+initLimit=5
+syncLimit=2
+
+--------------------------
+```
+###Starting Zookeeper
+
+```
+sak@sajad-m:~/apache-zookeeper-3.5.5-bin$ zkServer.sh start
+
+output 
+
+
+ZooKeeper JMX enabled by default
+Using config: /home/sak/apache-zookeeper-3.5.5-bin/bin/../conf/zoo.cfg
+Starting zookeeper ... STARTED
+
+```
+
+You can also launch the Zookeeper CLI, which will allow you to connect to the Zookeeper server:
+
+```
+with command sak@sajad-m:~/apache-zookeeper-3.5.5-bin$ zkCli.sh
+
+```
+
+##Apache Kafka
+
+apache Kafka is an open-source stream-processing software platform developed by LinkedIn and donated to the Apache Software Foundation, written in Scala and Java. The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds.
+
+Lets donwnload apache kafka with the code below 
+
+```
+wget https://www-us.apache.org/dist/kafka/2.2.1/kafka_2.11-2.2.1.tgz
+
+tar -zxf kafka_2.11-2.2.1.tgz 
+
+cd kafka_2.11-2.2.1  
+
+```
+###Starting the Kafka server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
